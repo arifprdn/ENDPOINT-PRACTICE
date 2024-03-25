@@ -1,0 +1,27 @@
+### GET DATA
+GET http://localhost:3000/customers
+
+### CREATE DATA
+POST http://localhost:3000/customers
+Content-Type: application/json
+
+{
+    "name": "Ucok",
+    "email": "ucok@gmail.com",
+    "phone_number": "089876765454",
+    "is_active": true
+}
+
+### UPDATE DATA
+PUT http://localhost:3000/customers/7
+Content-Type: application/json
+
+{
+    "name": "Ucok",
+    "email": "ucok@gmail.com",
+    "phone_number": "089876765454",
+    "is_active": true
+}
+
+### DELETE DATA
+DELETE http://localhost:3000/customers/2
